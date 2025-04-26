@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:5000/api";
+const baseURL = "https://innovation-showcase-backend.onrender.com/api";
 
 // Get query params from URL
 function getQueryParam(param) {
