@@ -1,0 +1,84 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<!-- The lang="en" attribute specifies that the content of this page is in English. 
+     This is important for accessibility and SEO. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovation Showcase Portal</title>
+  
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Styles moved to assets/style.css -->
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <h1><i class="fas fa-lightbulb"></i> Innovation Showcase</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+        <a href="dashboard.html"><i class="fas fa-plus-circle"></i> Submit Project</a>
+        <a href="admin.html"><i class="fas fa-cog"></i> Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="hero-section text-center mt-lg mb-lg">
+      <h1 class="hero-title">Welcome to Innovation Showcase</h1>
+      <p class="hero-subtitle">Discover and share innovative projects from our community</p>
+      <div class="hero-cta">
+        <a href="register.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Get Started</a>
+        <a href="dashboard.html" class="btn btn-secondary"><i class="fas fa-lightbulb"></i> Submit Your Project</a>
+      </div>
+    </header>
+
+    <section class="features-section mb-xl">
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-users"></i>
+          <h3>Community Driven</h3>
+          <p>Join a vibrant community of innovators and creators</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-share-alt"></i>
+          <h3>Share & Collaborate</h3>
+          <p>Showcase your work and collaborate with others</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Recognition</h3>
+          <p>Get recognized for your innovative contributions</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid fade-in" id="projects">
+        <!-- Projects will be dynamically loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2024 Innovation Showcase Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

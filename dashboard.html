@@ -1,0 +1,68 @@
+<!-- frontend/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Project | Innovation Showcase Portal</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <h1>Innovation Showcase</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="dashboard.html" class="active">Submit Project</a>
+                <a href="admin.html">Admin</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card" style="max-width: 800px; margin: 2rem auto;">
+            <form id="projectForm" class="fade-in">
+                <h2 class="text-center mb-lg">Submit Your Innovation</h2>
+                
+                <div class="form-group">
+                    <label for="title">Project Title</label>
+                    <input type="text" id="title" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Project Description</label>
+                    <textarea id="description" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <input type="text" id="category" placeholder="e.g. AI, IoT, Web" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="tags">Tags</label>
+                    <input type="text" id="tags" placeholder="Enter comma-separated tags" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="video_link">Video Link (optional)</label>
+                    <input type="url" id="video_link" placeholder="https://..." />
+                </div>
+                
+                <button type="submit" class="btn">Submit Project</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="text-center mt-lg mb-lg">
+        <p>&copy; 2024 Innovation Showcase Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+</body>
+</html>

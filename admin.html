@@ -1,0 +1,44 @@
+<!-- frontend/admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Innovation Showcase Portal</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <h1>Innovation Showcase</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="dashboard.html">Submit Project</a>
+                <a href="admin.html" class="active">Admin</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="text-center mt-lg mb-lg">
+            <h1>Admin Dashboard</h1>
+            <p class="text-secondary">Review and manage pending project submissions</p>
+        </header>
+
+        <div class="project-grid fade-in" id="pendingProjects">
+            <div class="loading">Loading pending projects...</div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-lg mb-lg">
+        <p>&copy; 2024 Innovation Showcase Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+</body>
+</html>
