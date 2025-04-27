@@ -1,4 +1,4 @@
-const baseURL = "https://innovation-showcase-backend.onrender.com/api";
+const baseURL = "https://innovation-showcase-portal-a.onrender.com/api";
 
 // Get query params from URL
 function getQueryParam(param) {
