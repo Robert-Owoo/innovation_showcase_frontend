@@ -21,7 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const res = await fetch(`${baseURL}/register`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          mode: 'cors',
+          credentials: 'include',
           body: JSON.stringify({ username, email, password, role })
         });
 
