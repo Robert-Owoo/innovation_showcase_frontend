@@ -292,6 +292,27 @@ document.addEventListener("DOMContentLoaded", () => {
         pendingProjectsContainer.innerHTML = "<p>Failed to load projects.</p>";
       });
   }
+
+  // PROJECTS PAGE (projects.html)
+  const projectsList = document.getElementById("projects-list");
+  if (projectsList) {
+    fetch(`${baseURL}/projects`)
+      .then(res => res.json())
+      .then(projects => {
+        projectsList.innerHTML = projects.map(project => `
+          <div class="project-card">
+            <h3>${project.title}</h3>
+            <p class="category">${project.category || "N/A"}</p>
+            <p>${project.description.slice(0, 120)}...</p>
+            ${project.video_link ? `<a class="video-link" href="${project.video_link}" target="_blank">Watch Video</a>` : ""}
+            <a class="details-link" href="project.html?id=${project.id}">View Details</a>
+          </div>
+        `).join("");
+      })
+      .catch(() => {
+        projectsList.innerHTML = `<p>Unable to load projects.</p>`;
+      });
+  }
 });
 
 // Global approve/reject handlers
